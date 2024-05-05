@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin: 20px;
+        }
+        .ingredients {
+            width: 300px; 
+            height: auto;
+            box-shadow: 0px 2px 4px black;
+            line-height: 30px;
+            margin-bottom: 20px;
+            position: fixed;
+            top: 20px;
+        }
+        .left-ingredients {
+            left: 20px;
+        }
+        .right-ingredients {
+            right: 20px;
+        }
+        .items {
+            width: 100%;
+            height: 100%;
+        }
+        h1 {
+            text-align: center;
+            color: green;
+        }
+        .items h1 {
+            background-color: black;
+            color: white;
+            margin-top: 0;
+            padding: 10px;
+        }
+        .flexing {
+            width: calc(60% - 200px); 
+            margin-top: 20px;
+            margin-left: auto;
+            margin-right: auto;
+            
+            top: 20px;
+            bottom: 20px;
+            right: 20px; 
+            overflow-y: auto;
+            left:10px;
+        }
+        .iframe-container {
+            margin-bottom: 20px;
+            width: 100%; 
+            height: auto;
+        }
+        .iframe-container iframe {
+            width: 100%;
+            height: 315px;
+        }
+        .iframe-heading {
+            background-color: black;
+            color: white;
+            padding: 10px;
+            margin-top: 0;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="ingredients left-ingredients">
+            <div class="items">
+                <h1>Ingredients</h1>
+                <ol>
+                    <li>Basmati rice</li>
+                    <li>Chicken or mutton</li>
+                    <li>Onions</li>
+                    <li>Tomatoes</li>
+                    <li>Yogurt</li>
+                    <li>Ginger-garlic paste</li>
+                    <li>Garam masala</li>
+                    <li>Turmeric</li>
+                    <li>Cumin</li>
+                    <li>Coriander</li>
+                    <li>Chili powder</li>
+                    <li>Saffron</li>
+                    <li>Mint leaves</li>
+                    <li>Cilantro</li>
+                    <li>Salt</li>
+                    <li>Ghee/oil</li>
+                </ol>
+            </div>
+        </div>
+        <div class="ingredients right-ingredients">
+            <div class="items">
+                <h1>Preparation</h1>
+                <ol>
+                    <li>Parboil Rice: Rinse basmati rice until the water runs clear. Parboil the rice in salted water until it's 70-80% cooked. Drain and set aside.</li>
+                    <li>Marinate the Meat: Marinate chicken or mutton pieces in yogurt, ginger-garlic paste, garam masala, turmeric, chili powder, and salt for at least 30 minutes.</li>
+                    <li>Layering: In a heavy-bottomed pot, layer the parboiled rice and marinated meat. Add fried onions, saffron-infused milk, mint leaves, and cilantro between the layers. Seal the pot with dough or a tight-fitting lid.</li>
+                    <li>Cooking: Place the sealed pot on low heat and cook for about 30-40 minutes, or until the rice and meat are fully cooked and aromatic.</li>
+                    <li>Serve: Gently fluff the biryani with a fork before serving hot with raita (yogurt dip) and salad.</li>
+                </ol>
+            </div>
+        </div>
+        <div class="flexing">
+            <div class="heading-fixed">
+               
+            </div>
+            <div class="iframe-container">
+                <h1 class="iframe-heading">Video 1</h1>
+                <iframe src="https://www.youtube.com/embed/kHjkXysXChw?si=PlyMSMjViJxzODCQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="iframe-container">
+                <h1 class="iframe-heading">Video 2</h1>
+                <iframe src="https://www.youtube.com/embed/vCgCfJY3AqQ?si=6qjhc0YCDuOu7q-_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="iframe-container">
+                <h1 class="iframe-heading">Video 3</h1>
+                <iframe src="https://www.youtube.com/embed/DTx1HGCZgho?si=_QOyibr3fcLsmIiC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="iframe-container">
+                <h1 class="iframe-heading">Video 4</h1>
+                <iframe src="https://www.youtube.com/embed/e0gt9z94TAE?si=qLH17RXsUFyNFpvi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="iframe-container">
+                <h1 class="iframe-heading">Video 5</h1>
+                <iframe src="https://www.youtube.com/embed/PVO-4Jnjpfk?si=7tRcTqHCtHPqQUny" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

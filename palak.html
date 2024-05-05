@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin: 20px;
+        }
+        .ingredients {
+            width: 300px; 
+            height: auto;
+            box-shadow: 0px 2px 4px black;
+            line-height: 30px;
+            margin-bottom: 20px;
+            position: fixed;
+            top: 20px;
+        }
+        .left-ingredients {
+            left: 20px;
+        }
+        .right-ingredients {
+            right: 20px;
+        }
+        .items {
+            width: 100%;
+            height: 100%;
+        }
+        h1 {
+            text-align: center;
+            color: green;
+        }
+        .items h1 {
+            background-color: black;
+            color: white;
+            margin-top: 0;
+            padding: 10px;
+        }
+        .flexing {
+            width: calc(60% - 200px); 
+            margin-top: 20px;
+            margin-left: auto;
+            margin-right: auto;
+            
+            top: 20px;
+            bottom: 20px;
+            right: 20px; 
+            overflow-y: auto;
+            left:10px;
+        }
+        .iframe-container {
+            margin-bottom: 20px;
+            width: 100%; 
+            height: auto;
+        }
+        .iframe-container iframe {
+            width: 100%;
+            height: 315px;
+        }
+        .iframe-heading {
+            background-color: black;
+            color: white;
+            padding: 10px;
+            margin-top: 0;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="ingredients left-ingredients">
+            <div class="items">
+                <h1>Ingredients</h1>
+                <ol>
+                    <li>Spinach</li>
+                    <li>Paneer (Indian cheese)</li>
+                    <li>Onions</li>
+                    <li>Tomatoes</li>
+                    <li>Ginger</li>
+                    <li>Garlic</li>
+                    <li>Garam masala</li>
+                    <li>Turmeric</li>
+                    <li>Cumin</li>
+                    <li>Coriander</li>
+                    <li>Chili powder</li>
+                    <li>Cream</li>
+                    <li>Butter</li>
+                    <li>Salt</li>
+                    <li>Oil</li>
+                </ol>
+            </div>
+        </div>
+        <div class="ingredients right-ingredients">
+            <div class="items">
+                <h1>Preparation</h1>
+                <ol>
+                    <li>Prepare the Spinach Puree: Blanch spinach leaves in boiling water, then immediately transfer them to ice water to retain their color. Blend the blanched spinach with green chilies to a smooth puree.</li>
+                    <li>Cook the Gravy: In a pan, heat oil and sauté onions until golden brown. Add ginger-garlic paste and cook until fragrant. Add chopped tomatoes, turmeric, garam masala, cumin, coriander, chili powder, and salt. Cook until tomatoes are soft.</li>
+                    <li>Combine Spinach and Gravy: Add the spinach puree to the pan. Cook for a few minutes, then stir in cream and paneer cubes. Simmer until the paneer is heated through and the flavors meld together.</li>
+                    <li>Finish and Serve: Garnish with a swirl of cream and chopped cilantro before serving hot with rice or naan.</li>
+                </ol>
+            </div>
+        </div>
+        <div class="flexing">
+            <div class="heading-fixed">
+               
+            </div>
+            <div class="iframe-container">
+                <h1 class="iframe-heading">Video 1</h1>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/cjGDsV6FvNE?si=Kjd44bTPzDS2JEXh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="iframe-container">
+                <h1 class="iframe-heading">Video 2</h1>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/y6wBGuklYkc?si=li0KN6jFCFRrOf-B" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="iframe-container">
+                <h1 class="iframe-heading">Video 3</h1>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/LiH0BjWa5cc?si=np5FB8Gaz2A9xgbQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="iframe-container">
+                <h1 class="iframe-heading">Video 4</h1>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Y4uBpvOmsr4?si=7zR020P7b_69OVU1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="iframe-container">
+                <h1 class="iframe-heading">Video 5</h1>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/vCDy7vjbz_M?si=ETKV31Ue3q-Ru9xx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

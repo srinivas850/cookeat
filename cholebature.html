@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin: 20px;
+        }
+        .ingredients {
+            width: 300px; 
+            height: auto;
+            box-shadow: 0px 2px 4px black;
+            line-height: 30px;
+            margin-bottom: 20px;
+            position: fixed;
+            top: 20px;
+        }
+        .left-ingredients {
+            left: 20px;
+        }
+        .right-ingredients {
+            right: 20px;
+        }
+        .items {
+            width: 100%;
+            height: 100%;
+        }
+        h1 {
+            text-align: center;
+            color: green;
+        }
+        .items h1 {
+            background-color: black;
+            color: white;
+            margin-top: 0;
+            padding: 10px;
+        }
+        .flexing {
+            width: calc(60% - 200px); 
+            margin-top: 20px;
+            margin-left: auto;
+            margin-right: auto;
+            
+            top: 20px;
+            bottom: 20px;
+            right: 20px; 
+            overflow-y: auto;
+            left:10px;
+        }
+        .iframe-container {
+            margin-bottom: 20px;
+            width: 100%; 
+            height: auto;
+        }
+        .iframe-container iframe {
+            width: 100%;
+            height: 315px;
+        }
+        .iframe-heading {
+            background-color: black;
+            color: white;
+            padding: 10px;
+            margin-top: 0;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="ingredients left-ingredients">
+            <div class="items">
+                <h1>Ingredients</h1>
+                <ol>
+                    <li>Chickpeas (chole)</li>
+                    <li>Onions</li>
+                    <li>Tomatoes</li>
+                    <li>Ginger</li>
+                    <li>Garlic</li>
+                    <li>Green chilies</li>
+                    <li>Garam masala</li>
+                    <li>Turmeric</li>
+                    <li>Cumin</li>
+                    <li>Coriander</li>
+                    <li>Chili powder</li>
+                    <li>Amchur (dried mango powder)</li>
+                    <li>Flour</li>
+                    <li>Yogurt</li>
+                    <li>Baking powder</li>
+                    <li>Oil</li>
+                    <li>Salt</li>
+                </ol>
+            </div>
+        </div>
+        <div class="ingredients right-ingredients">
+            <div class="items">
+                <h1>Preparation</h1>
+                <ol>
+                    <li>Cook Chickpeas: Soak chickpeas overnight, then pressure cook with salt until tender. Drain and set aside.</li>
+                    <li>Prepare Chole: In a pan, heat oil and add cumin seeds. Once they splutter, add chopped onions, ginger, and garlic. Sauté until onions are golden brown. Add chopped tomatoes, turmeric, garam masala, coriander powder, chili powder, and salt. Cook until tomatoes are soft. Add cooked chickpeas and simmer until the flavors meld together.</li>
+                    <li>Make Bhature Dough: In a bowl, mix flour, yogurt, baking powder, and salt. Knead into a soft dough. Cover and let it rest for 2 hours.</li>
+                    <li>Fry Bhature: Divide the dough into small balls and roll them out into discs. Deep-fry the discs in hot oil until they puff up and turn golden brown.</li>
+                    <li>Serve: Serve hot chole with freshly fried bhature, sliced onions, and lemon wedges.</li>
+                </ol>
+            </div>
+        </div>
+        <div class="flexing">
+            <div class="heading-fixed">
+               
+            </div>
+            <div class="iframe-container">
+                <h1 class="iframe-heading">Video 1</h1>
+                <iframe src="https://www.youtube.com/embed/JxTiilgcxsQ?si=_oQWfFUO-MPJitsf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="iframe-container">
+                <h1 class="iframe-heading">Video 2</h1>
+                <iframe src="https://www.youtube.com/embed/62o8ALF72tE?si=MRUEgfenci_q171L" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="iframe-container">
+                <h1 class="iframe-heading">Video 3</h1>
+                <iframe src="https://www.youtube.com/embed/epdCHzkUM5o?si=fm1mIeZgryM8Xubl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="iframe-container">
+                <h1 class="iframe-heading">Video 4</h1>
+                <iframe src="https://www.youtube.com/embed/bCb5vK4BDbU?si=m1UNfxCv_WWXwP0q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="iframe-container">
+                <h1 class="iframe-heading">Video 5</h1>
+                <iframe src="https://www.youtube.com/embed/q78xEERgXuk?si=FVVgHKl_h6874zRv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="iframe-container">
+                <h1 class="iframe-heading">Video 6</h1>
+                <iframe src="https://www.youtube.com/embed/GV1vzxIq4Ug?si=ijLnh0Me_dkIuRPa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

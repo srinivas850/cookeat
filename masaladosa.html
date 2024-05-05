@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin: 20px;
+        }
+        .ingredients {
+            width: 300px; 
+            height: auto;
+            box-shadow: 0px 2px 4px black;
+            line-height: 30px;
+            margin-bottom: 20px;
+            position: fixed;
+            top: 20px;
+        }
+        .left-ingredients {
+            left: 20px;
+        }
+        .right-ingredients {
+            right: 20px;
+        }
+        .items {
+            width: 100%;
+            height: 100%;
+        }
+        h1 {
+            text-align: center;
+            color: green;
+        }
+        .items h1 {
+            background-color: black;
+            color: white;
+            margin-top: 0;
+            padding: 10px;
+        }
+        .flexing {
+            width: calc(60% - 200px); 
+            margin-top: 20px;
+            margin-left: auto;
+            margin-right: auto;
+            
+            top: 20px;
+            bottom: 20px;
+            right: 20px; 
+            overflow-y: auto;
+            left:10px;
+        }
+        .iframe-container {
+            margin-bottom: 20px;
+            width: 100%; 
+            height: auto;
+        }
+        .iframe-container iframe {
+            width: 100%;
+            height: 315px;
+        }
+        .iframe-heading {
+            background-color: black;
+            color: white;
+            padding: 10px;
+            margin-top: 0;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="ingredients left-ingredients">
+            <div class="items">
+                <h1>Ingredients</h1>
+                <ol>
+                    <li>Dosa batter (fermented rice and lentil batter)</li>
+                    <li>Potatoes</li>
+                    <li>Onions</li>
+                    <li>Mustard seeds</li>
+                    <li>Turmeric</li>
+                    <li>Curry leaves</li>
+                    <li>Green chilies</li>
+                    <li>Ginger</li>
+                    <li>Coriander leaves</li>
+                    <li>Oil</li>
+                    <li>Salt</li>
+                </ol>
+            </div>
+        </div>
+        <div class="ingredients right-ingredients">
+            <div class="items">
+                <h1>Preparation</h1>
+                <ol>
+                    <li>Prepare Potato Filling: Boil and mash potatoes. In a pan, heat oil and add mustard seeds. Once they splutter, add chopped onions, green chilies, ginger, and curry leaves. Sauté until onions are translucent. Add turmeric, salt, and mashed potatoes. Cook for a few minutes, then garnish with chopped cilantro.</li>
+                    <li>Make Dosa: Heat a dosa tawa (griddle) and grease it lightly. Pour a ladleful of dosa batter onto the tawa and spread it into a thin circle. Drizzle oil around the edges and cook until crisp and golden.</li>
+                    <li>Stuff and Serve: Place a portion of the potato filling on one side of the dosa. Fold the dosa over the filling and serve hot with coconut chutney and sambar.</li>
+                </ol>
+            </div>
+        </div>
+        <div class="flexing">
+            <div class="heading-fixed">
+               
+            </div>
+            <div class="iframe-container">
+                <h1 class="iframe-heading">Video 1</h1>
+                <iframe src="https://www.youtube.com/embed/BfyGjr4vgOc?si=Dm2Fo-qszP2bgoph" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="iframe-container">
+                <h1 class="iframe-heading">Video 2</h1>
+                <iframe src="https://www.youtube.com/embed/81MOXdJexbU?si=DvVwVKBGrHfPau6Z" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="iframe-container">
+                <h1 class="iframe-heading">Video 3</h1>
+                <iframe src="https://www.youtube.com/embed/N3-CmjdwZRA?si=-PTfpe3hSuaYaXf_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="iframe-container">
+                <h1 class="iframe-heading">Video 4</h1>
+                <iframe src="https://www.youtube.com/embed/EeAgJNX4Vcs?si=t5-ldrCirZFocyae" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="iframe-container">
+                <h1 class="iframe-heading">Video 5</h1>
+                <iframe src="https://www.youtube.com/embed/FHUOJ-tTRak?si=LOOrBfq1pzgCWlO8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="iframe-container">
+                <h1 class="iframe-heading">Video 6</h1>
+                <iframe src="https://www.youtube.com/embed/UbpSYuzrOdc?si=vCzo1-h5U0ZGS_TN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
